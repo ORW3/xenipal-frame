@@ -1,0 +1,948 @@
+iframe { 
+  display:block; 
+  width:100%; 
+  border:none;
+  margin:0;
+  padding:0;
+  height:100vh;
+}
+
+.salir{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  box-shadow: 3px 3px 8px #b1b1b1,
+  -3px -3px 8px #ffffff;
+  background: #d44646;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.salir i{
+  background-color: unset;
+  color: #ecf0f3;
+}
+
+/*
+
+*{
+  margin: 0;
+  padding: 0;
+  background: #ecf0f3;
+}
+
+@media(min-width:991px){
+
+.fondoFlor{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+  color: #0D0D0D;
+}
+
+.carrusel{
+  width: 100%;
+  height: 100vh;
+  background-color: none;
+}
+
+.sec0{
+  width: 300%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #ecf0f3;
+  transition: all .5s ease;
+  transform: translateX(0%);
+}
+
+
+
+#sec1{
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 20%;
+  height: 70vh;
+  border-radius: 25px;
+  box-shadow: 13px 13px 20px #cbced1,
+              -13px -13px 20px #ffffff;
+}
+
+#c1{
+  display: flex;
+  flex-direction: column;
+}
+
+#sec2{
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 20%;
+  height: 70vh;
+  border-radius: 25px;
+  box-shadow: 13px 13px 20px #cbced1,
+              -13px -13px 20px #ffffff;
+}
+
+#c2{
+  display: flex;
+  flex-direction: column;
+}
+
+#sec3{
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 20%;
+  height: 70vh;
+  border-radius: 25px;
+  box-shadow: 13px 13px 20px #cbced1,
+              -13px -13px 20px #ffffff;
+}
+
+#c3{
+  display: flex;
+  flex-direction: column;
+}
+
+.carrusel .puntos{
+  width:100%;
+  background: unset;
+  padding: 5px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.carrusel .punto{
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(135deg, #0D0D0D 0%, #0D0D0D 25%, #0AC24A 50%, #00AB6B 75%, #09B815 100%);
+  background-size: 400% 400%;
+  transition: 0.5s all;
+  margin: 1em;
+  border-radius: 100%;
+  list-style: none;
+  cursor: pointer;
+  box-shadow: 3px 3px 8px #a7aaaf,
+              -3px -3px 8px #ffffff;
+}
+
+.carrusel .punto:hover{
+  background-position: 100% 100%;
+}
+
+.carrusel .punto.activo{
+  background-position: 100% 100%;
+}
+
+.flor1 {
+  height: auto;
+  width: auto;
+  margin:120px auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  cursor: pointer;
+}
+
+.flor2 {
+  height: auto;
+  width: auto;
+  margin:120px auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  cursor: pointer;
+}
+
+.flor3 {
+  height: auto;
+  width: auto;
+  margin:120px auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  cursor: pointer;
+}
+
+.flor4 {
+  height: auto;
+  width: auto;
+  margin:120px auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  cursor: pointer;
+}
+
+.flor5 {
+  height: auto;
+  width: auto;
+  margin:120px auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  cursor: pointer;
+}
+
+.flor6 {
+  height: auto;
+  width: auto;
+  margin:120px auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  cursor: pointer;
+}
+
+.centro {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: unset;
+  z-index: 4;
+  background-size: 5px 5px;
+}
+
+img {
+  border-radius: 100%;
+}
+
+.petalo {
+  position: absolute;
+  z-index: 3;
+  width: 320px;
+  height: 90px;
+  border-radius: 50%;
+ 
+}
+
+.petalo.a1 {
+  transform: rotate(22.5deg);
+  background: radial-gradient(circle, #ff85d0, #ff0062);
+}
+.petalo.a2 {
+  transform: rotate(67.5deg);
+  background: radial-gradient(circle, #ff85d0, #ff0062);
+}
+.petalo.a3 {
+  transform: rotate(110.5deg);
+  background: radial-gradient(circle, #ff85d0, #ff0062);
+}
+.petalo.a4 {
+  transform: rotate(157.5deg);
+  background: radial-gradient(circle, #ff85d0, #ff0062);
+}
+
+.petalo.b1 {
+  transform: rotate(22.5deg);
+  background: radial-gradient(circle, #e5ff85, #71d41f);
+}
+.petalo.b2 {
+  transform: rotate(67.5deg);
+  background: radial-gradient(circle, #e5ff85, #71d41f);
+}
+.petalo.b3 {
+  transform: rotate(110.5deg);
+  background: radial-gradient(circle, #e5ff85, #71d41f);
+}
+.petalo.b4 {
+  transform: rotate(157.5deg);
+  background: radial-gradient(circle, #e5ff85, #71d41f);
+}
+
+.petalo.c1 {
+  transform: rotate(22.5deg);
+  background: radial-gradient(circle, #00ffc8, #30b3ff);
+}
+.petalo.c2 {
+  transform: rotate(67.5deg);
+  background: radial-gradient(circle, #00ffc8, #30b3ff);
+}
+.petalo.c3 {
+  transform: rotate(110.5deg);
+  background: radial-gradient(circle, #00ffc8, #30b3ff);
+}
+.petalo.c4 {
+  transform: rotate(157.5deg);
+  background: radial-gradient(circle, #00ffc8, #30b3ff);
+}
+
+.nombrePlanta{
+  margin-right: 5px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 15px;
+  color: #0D0D0D;
+  padding: 10px 16px 10px 16px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.nombrePlanta:focus{
+  margin-right: 5px;
+  border-radius: 25px;
+  box-shadow: inset 3px 3px 8px #cbced1,
+              inset -3px -3px 8px #ffffff;
+
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 15px;
+  color: #0D0D0D;
+  padding: 10px 16px 10px 16px;
+  letter-spacing: 0.5px;
+}
+}
+
+/*=============================================
+PANTALLA DE TABLET
+=============================================
+
+@media(max-width:991px) and (min-width:768px){
+
+*{
+  box-sizing: border-box;
+}
+
+.fondoFlor{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+  color: #0D0D0D;
+}
+
+.carrusel{
+  width: 100%;
+  height: 100vh;
+  background-color: none;
+}
+
+.sec0{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ecf0f3;
+  transition: all .5s ease;
+}
+
+
+#sec1{
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+
+#c1{
+  display: flex;
+  flex-direction: column;
+}
+
+#sec2{
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+
+#c2{
+  display: flex;
+  flex-direction: column;
+}
+
+#sec3{
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+
+#c3{
+  display: flex;
+  flex-direction: column;
+}
+
+.carrusel .puntos{
+  width:100%;
+  background: unset;
+  padding: 5px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.carrusel .punto{
+  display: none;
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(135deg, #0D0D0D 0%, #0D0D0D 25%, #0AC24A 50%, #00AB6B 75%, #09B815 100%);
+  background-size: 400% 400%;
+  transition: 0.5s all;
+  margin: 1em;
+  border-radius: 100%;
+  list-style: none;
+  cursor: pointer;
+  box-shadow: 3px 3px 8px #a7aaaf,
+              -3px -3px 8px #ffffff;
+}
+
+.carrusel .punto:hover{
+  background-position: 100% 100%;
+}
+
+.carrusel .punto.activo{
+  background-position: 100% 100%;
+}
+
+.flor1 {
+  height: auto;
+  width: auto;
+  margin:50px auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.flor2 {
+  height: auto;
+  width: auto;
+  margin:50px auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.flor3 {
+  height: auto;
+  width: auto;
+  margin:50px auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.flor4 {
+  height: auto;
+  width: auto;
+  margin:50px auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.flor5 {
+  height: auto;
+  width: auto;
+  margin:50px auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.flor6 {
+  height: auto;
+  width: auto;
+  margin:50px auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.centro {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: unset;
+  z-index: 4;
+  background-size: 5px 5px;
+}
+
+svg {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+
+.petalo {
+  position: absolute;
+  z-index: 3;
+  width: 120px;
+  height: 30px;
+  border-radius: 50%;
+ 
+}
+
+.petalo.a1 {
+  transform: rotate(22.5deg);
+  background: radial-gradient(circle, #ff85d0, #ff0062);
+}
+.petalo.a2 {
+  transform: rotate(67.5deg);
+  background: radial-gradient(circle, #ff85d0, #ff0062);
+}
+.petalo.a3 {
+  transform: rotate(110.5deg);
+  background: radial-gradient(circle, #ff85d0, #ff0062);
+}
+.petalo.a4 {
+  transform: rotate(157.5deg);
+  background: radial-gradient(circle, #ff85d0, #ff0062);
+}
+
+.petalo.b1 {
+  transform: rotate(22.5deg);
+  background: radial-gradient(circle, #e5ff85, #71d41f);
+}
+.petalo.b2 {
+  transform: rotate(67.5deg);
+  background: radial-gradient(circle, #e5ff85, #71d41f);
+}
+.petalo.b3 {
+  transform: rotate(110.5deg);
+  background: radial-gradient(circle, #e5ff85, #71d41f);
+}
+.petalo.b4 {
+  transform: rotate(157.5deg);
+  background: radial-gradient(circle, #e5ff85, #71d41f);
+}
+
+.petalo.c1 {
+  transform: rotate(22.5deg);
+  background: radial-gradient(circle, #00ffc8, #30b3ff);
+}
+.petalo.c2 {
+  transform: rotate(67.5deg);
+  background: radial-gradient(circle, #00ffc8, #30b3ff);
+}
+.petalo.c3 {
+  transform: rotate(110.5deg);
+  background: radial-gradient(circle, #00ffc8, #30b3ff);
+}
+.petalo.c4 {
+  transform: rotate(157.5deg);
+  background: radial-gradient(circle, #00ffc8, #30b3ff);
+}
+
+.nombrePlanta{
+  margin-right: 5px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 10px;
+  color: #0D0D0D;
+  padding: 5px 6px 5px 6px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.nombrePlanta:focus{
+  margin-right: 5px;
+  border-radius: 25px;
+  box-shadow: inset 3px 3px 8px #cbced1,
+              inset -3px -3px 8px #ffffff;
+
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 10px;
+  color: #0D0D0D;
+  padding: 5px 6px 5px 6px;
+  letter-spacing: 0.5px;
+}
+
+}
+
+
+/*=============================================
+PANTALLA DE TELEFONO
+=============================================
+
+@media(max-width:767px){
+
+    
+::-webkit-scrollbar {
+  display: none;
+}
+
+.fondoFlor{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+  color: #0D0D0D;
+}
+
+.carrusel{
+  width: 100%;
+  height: 100vh;
+  background-color: none;
+}
+
+.sec0{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ecf0f3;
+  transition: all .5s ease;
+}
+
+
+#sec1{
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+
+#c1{
+  display: flex;
+  flex-direction: column;
+}
+
+#sec2{
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+
+#c2{
+  display: flex;
+  flex-direction: column;
+}
+
+#sec3{
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+
+#c3{
+  display: flex;
+  flex-direction: column;
+}
+
+.carrusel .puntos{
+  width:100%;
+  background: unset;
+  padding: 5px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.carrusel .punto{
+  display: none;
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(135deg, #0D0D0D 0%, #0D0D0D 25%, #0AC24A 50%, #00AB6B 75%, #09B815 100%);
+  background-size: 400% 400%;
+  transition: 0.5s all;
+  margin: 1em;
+  border-radius: 100%;
+  list-style: none;
+  cursor: pointer;
+  box-shadow: 3px 3px 8px #a7aaaf,
+              -3px -3px 8px #ffffff;
+}
+
+.carrusel .punto:hover{
+  background-position: 100% 100%;
+}
+
+.carrusel .punto.activo{
+  background-position: 100% 100%;
+}
+
+.flor1 {
+  height: auto;
+  width: auto;
+  margin:50px auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.flor2 {
+  height: auto;
+  width: auto;
+  margin:50px auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.flor3 {
+  height: auto;
+  width: auto;
+  margin:50px auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.flor4 {
+  height: auto;
+  width: auto;
+  margin:50px auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.flor5 {
+  height: auto;
+  width: auto;
+  margin:50px auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.flor6 {
+  height: auto;
+  width: auto;
+  margin:50px auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.centro {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: unset;
+  z-index: 4;
+  background-size: 5px 5px;
+}
+
+svg {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+
+.petalo {
+  position: absolute;
+  z-index: 3;
+  width: 120px;
+  height: 30px;
+  border-radius: 50%;
+ 
+}
+
+.petalo.a1 {
+  transform: rotate(22.5deg);
+  background: radial-gradient(circle, #ff85d0, #ff0062);
+}
+.petalo.a2 {
+  transform: rotate(67.5deg);
+  background: radial-gradient(circle, #ff85d0, #ff0062);
+}
+.petalo.a3 {
+  transform: rotate(110.5deg);
+  background: radial-gradient(circle, #ff85d0, #ff0062);
+}
+.petalo.a4 {
+  transform: rotate(157.5deg);
+  background: radial-gradient(circle, #ff85d0, #ff0062);
+}
+
+.petalo.b1 {
+  transform: rotate(22.5deg);
+  background: radial-gradient(circle, #e5ff85, #71d41f);
+}
+.petalo.b2 {
+  transform: rotate(67.5deg);
+  background: radial-gradient(circle, #e5ff85, #71d41f);
+}
+.petalo.b3 {
+  transform: rotate(110.5deg);
+  background: radial-gradient(circle, #e5ff85, #71d41f);
+}
+.petalo.b4 {
+  transform: rotate(157.5deg);
+  background: radial-gradient(circle, #e5ff85, #71d41f);
+}
+
+.petalo.c1 {
+  transform: rotate(22.5deg);
+  background: radial-gradient(circle, #00ffc8, #30b3ff);
+}
+.petalo.c2 {
+  transform: rotate(67.5deg);
+  background: radial-gradient(circle, #00ffc8, #30b3ff);
+}
+.petalo.c3 {
+  transform: rotate(110.5deg);
+  background: radial-gradient(circle, #00ffc8, #30b3ff);
+}
+.petalo.c4 {
+  transform: rotate(157.5deg);
+  background: radial-gradient(circle, #00ffc8, #30b3ff);
+}
+
+.nombrePlanta{
+  margin-right: 5px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 10px;
+  color: #0D0D0D;
+  padding: 5px 6px 5px 6px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.nombrePlanta:focus{
+  margin-right: 5px;
+  border-radius: 25px;
+  box-shadow: inset 3px 3px 8px #cbced1,
+              inset -3px -3px 8px #ffffff;
+
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 10px;
+  color: #0D0D0D;
+  padding: 5px 6px 5px 6px;
+  letter-spacing: 0.5px;
+}
+
+}
+*/

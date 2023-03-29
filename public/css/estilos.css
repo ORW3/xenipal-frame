@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #ecf0f3;
+}
+
+
+@media(min-width:991px){
+
+.fondo{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Lato', sans-serif;
+    color: #0D0D0D;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#forme{
+    width: 290px;
+    height: 490px;
+    padding: 60px 35px 35px 35px;
+    border-radius: 40px;
+    background: #ecf0f3;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+
+.crear-cuenta{
+    padding-top: 24px;
+    text-align: center;
+    background: none;
+    letter-spacing: 0.5px;
+}
+
+.iniciar-sesion{
+    padding-top: 24px;
+    text-align: center;
+    background: none;
+    letter-spacing: 0.5px;
+}
+
+.rellenar {
+    width: 100%;
+    padding: 50px 5px 5px 0px;
+}
+
+.rellenar input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 15px;
+    color: #0D0D0D;
+    padding: 20px 10px 20px 5px;
+    letter-spacing: 0.5px;
+}
+
+.rellenar input::placeholder {
+    color: #b8b8b8;
+}
+
+.rellenar i{
+    height: 20px;
+    margin: 0 10px -3px 25px;
+    color: #b8b8b8;
+}
+
+.nom, .port, .usu {
+    margin-bottom: 20px;
+    border-radius: 25px;
+    box-shadow: inset 3px 3px 8px #cbced1,
+                inset -3px -3px 8px #ffffff;
+}
+
+.pass{
+    border-radius: 25px;
+    box-shadow: inset 3px 3px 8px #cbced1,
+                inset -3px -3px 8px #ffffff;
+}
+
+.boton-registro{
+    font-family: 'Lato', sans-serif;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    background: linear-gradient(135deg, #0D0D0D 0%, #0D0D0D 25%, #0AC24A 50%, #00AB6B 75%, #09B815 100%);
+    background-size: 400% 400%;
+    background-repeat: no-repeat;
+    box-shadow: 3px 3px 8px #b1b1b1,
+                -3px -3px 8px #ffffff;
+    transition: 0.5s all;
+}
+
+.boton-registro:hover{
+    background-position: 100% 100%;
+}
+
+.boton-registro:active{
+    background-color: #00AB6B;
+}
+
+.inicio{
+    color: #0D0D0D;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.inicio a{
+    text-decoration: none;
+    color: #00AB6B;
+}
+
+.warnings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    background: none;
+    height: 20px;
+    width: 100%;
+}
+}
+
+/*=============================================
+PANTALLA DE TABLET
+=============================================*/
+
+@media(max-width:991px) and (min-width:768px){
+
+.fondo{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Lato', sans-serif;
+    color: #0D0D0D;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#forme{
+    width: 290px;
+    height: 490px;
+    padding: 60px 35px 35px 35px;
+    border-radius: 40px;
+    background: #ecf0f3;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+
+.crear-cuenta{
+    padding-top: 24px;
+    text-align: center;
+    background: none;
+    letter-spacing: 0.5px;
+}
+
+.iniciar-sesion{
+    padding-top: 24px;
+    text-align: center;
+    background: none;
+    letter-spacing: 0.5px;
+}
+
+.rellenar {
+    width: 100%;
+    padding: 50px 5px 5px 0px;
+}
+
+.rellenar input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 15px;
+    color: #0D0D0D;
+    padding: 20px 10px 20px 5px;
+    letter-spacing: 0.5px;
+}
+
+.rellenar input::placeholder {
+    color: #b8b8b8;
+}
+
+.rellenar i{
+    height: 20px;
+    margin: 0 10px -3px 25px;
+    color: #b8b8b8;
+}
+
+.nom, .port, .usu {
+    margin-bottom: 20px;
+    border-radius: 25px;
+    box-shadow: inset 3px 3px 8px #cbced1,
+                inset -3px -3px 8px #ffffff;
+}
+
+.pass{
+    border-radius: 25px;
+    box-shadow: inset 3px 3px 8px #cbced1,
+                inset -3px -3px 8px #ffffff;
+}
+
+.boton-registro{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    background: linear-gradient(135deg, #0D0D0D 0%, #0D0D0D 25%, #0AC24A 50%, #00AB6B 75%, #09B815 100%);
+    background-size: 400% 400%;
+    background-repeat: no-repeat;
+    box-shadow: 3px 3px 8px #b1b1b1,
+                -3px -3px 8px #ffffff;
+    transition: 0.5s all;
+}
+
+.boton-registro:hover{
+    background-position: 100% 100%;
+}
+
+.boton-registro:active{
+    background-color: #00AB6B;
+}
+
+.inicio{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.inicio a{
+    text-decoration: none;
+    color: #00AB6B;
+}
+
+.warnings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    background: none;
+    height: 20px;
+    width: 100%;
+}
+}
+
+/*=============================================
+PANTALLA DE TELEFONO
+=============================================*/
+
+@media(max-width:767px){
+
+    
+.fondo{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Lato', sans-serif;
+    color: #0D0D0D;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#forme{
+    width: 100%;
+    height: 100%;
+    padding: 0px 35px 35px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+
+.crear-cuenta{
+    padding-top: 24px;
+    text-align: center;
+    background: none;
+    letter-spacing: 0.5px;
+}
+
+.iniciar-sesion{
+    padding-top: 24px;
+    text-align: center;
+    background: none;
+    letter-spacing: 0.5px;
+}
+
+.rellenar {
+    width: 100%;
+    padding: 50px 5px 5px 0px;
+}
+
+.rellenar input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 15px;
+    color: #0D0D0D;
+    padding: 20px 10px 20px 5px;
+    letter-spacing: 0.5px;
+}
+
+.rellenar input::placeholder {
+    color: #b8b8b8;
+}
+
+.rellenar i{
+    height: 20px;
+    margin: 0 10px -3px 25px;
+    color: #b8b8b8;
+}
+
+.nom, .port, .usu {
+    margin-bottom: 20px;
+    border-radius: 25px;
+    box-shadow: inset 3px 3px 8px #cbced1,
+                inset -3px -3px 8px #ffffff;
+}
+
+.pass{
+    border-radius: 25px;
+    box-shadow: inset 3px 3px 8px #cbced1,
+                inset -3px -3px 8px #ffffff;
+}
+
+.boton-registro{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    background: linear-gradient(135deg, #0D0D0D 0%, #0D0D0D 25%, #0AC24A 50%, #00AB6B 75%, #09B815 100%);
+    background-size: 400% 400%;
+    background-repeat: no-repeat;
+    box-shadow: 3px 3px 8px #b1b1b1,
+                -3px -3px 8px #ffffff;
+    transition: 0.5s all;
+}
+
+.boton-registro:hover{
+    background-position: 100% 100%;
+}
+
+.boton-registro:active{
+    background-color: #00AB6B;
+}
+
+.inicio{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.inicio a{
+    text-decoration: none;
+    color: #00AB6B;
+}
+
+.warnings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    background: none;
+    height: 20px;
+    width: 100%;
+}
+}
