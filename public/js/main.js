@@ -12,8 +12,3 @@ form.addEventListener("submit",e=>{
         e.preventDefault();
     }
 });
-
-color1.addEventListener("input",e=>{
-    let petalo = document.getElementById('petalo')
-    petalo.style.background = e.target.value;
-})
