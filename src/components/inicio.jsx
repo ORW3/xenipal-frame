@@ -1,13 +1,13 @@
 export const Inicio=()=>{
 
     if (localStorage.getItem("usuario") === null){
-        localStorage.setItem("usuario", "12e1293f-06dc-4de9-9e9d-40afef9e35e9");
+        localStorage.setItem("usuario", "12e1293f-06dc-4de9-9e9d-40afef9e35e9")
         location.reload();
     }
 
     function click(){
         window.location.href= '/entrar';
-        localStorage.setItem("usuario", "12e1293f-06dc-4de9-9e9d-40afef9e35e9");
+        localStorage.setItem("usuario", "12e1293f-06dc-4de9-9e9d-40afef9e35e9")
     }
 
     return <>
